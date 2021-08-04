@@ -1,6 +1,6 @@
 name: odoo_provider_builder
 description: a builder for generate model used by odoo_provider.
-version: 0.0.1
+version: 0.0.2
 homepage: https://aikosia.com
 github: "https://github.com/aikosiadotcom/odoo_provider_builder"
 

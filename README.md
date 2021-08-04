@@ -1,6 +1,8 @@
 # Odoo Provider Builder
 
-Since it's too much writing to implement IOdooModel using [odoo_provider](https://pub.dev/packages/odoo_provider), i develop this package. So, writing model will become easily
+Since it's too much writing to implement IOdooModel using [odoo_provider](https://pub.dev/packages/odoo_provider), i develop this package. So, writing model will become easily.
+
+Please add this package as **dev dependency** to your project
 
 # Usage
 
