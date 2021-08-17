@@ -1,6 +1,6 @@
 name: odoo_provider_builder
 description: a builder for generate model used by odoo_provider.
-version: 0.0.2
+version: 0.0.2+1
 homepage: https://aikosia.com
 github: "https://github.com/aikosiadotcom/odoo_provider_builder"
 
@@ -13,7 +13,8 @@ dependencies:
     sdk: flutter
   analyzer: ^1.6.0
   build: ^2.1.0
-  odoo_provider: ^0.0.3
+  odoo_provider: 
+    path: '../odoo_provider'
   source_gen: ^1.0.2
 
 dev_dependencies:

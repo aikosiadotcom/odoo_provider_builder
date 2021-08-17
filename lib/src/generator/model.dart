@@ -18,6 +18,8 @@ List<DbColumn> _getDefinitions(List<dynamic> columns) {
       type = double;
     }
 
+    print(_type.toString());
+
     bool? required = element.getField("required")!.toBoolValue();
 
     return DbColumn(
@@ -78,7 +80,7 @@ class OdooProviderModelGenerator extends GeneratorForAnnotation<OdooModel> {
     final tableName = annotation.read('tableName').stringValue;
     final columns = annotation.read('columns').listValue;
     final idFieldName = annotation.read("id").stringValue;
-
+    print("hello world");
     List<DbColumn> columns2 = _getDefinitions(columns);
     return '''
 class $className implements IOdooModel {

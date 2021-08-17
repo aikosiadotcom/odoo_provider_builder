@@ -10,7 +10,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  odoo_provider: ^0.0.3
   odoo_provider_builder:
     path: ../../
 

@@ -9,9 +9,9 @@ part of 'user.dart';
 class User implements IOdooModel {
   final int? id; //false
   final String? login; //false
-  final String? name; //false
+  final String? namke; //false
 
-  User({this.id, this.login, this.name});
+  User({this.id, this.login, this.namke});
   factory User.fromJson(Map<String, dynamic> json) => _$UserFromJson(json);
   Map<String, dynamic> toJson() => _$UserToJson(this);
 
@@ -68,11 +68,11 @@ User _$UserFromJson(Map<String, dynamic> json) {
   return User(
       id: json['id'] as int,
       login: json['login'] as String,
-      name: json['name'] as String);
+      namke: json['namke'] as String);
 }
 
 Map<String, dynamic> _$UserToJson(User instance) => <String, dynamic>{
       'id': instance.id,
       'login': instance.login,
-      'name': instance.name
+      'namke': instance.namke
     };
