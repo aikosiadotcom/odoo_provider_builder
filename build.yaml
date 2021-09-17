@@ -6,7 +6,7 @@ builders:
     # Name of the function in the above library to call.
     builder_factories: ['odooProviderModelBuilder']
     # The mapping from the source extension to the generated file extension
-    build_extensions: {".dart":[".provider.part"]}
+    build_extensions: {".dart":["provider.g.part"]}
     # Will automatically run on any package that depends on it
     auto_apply: dependents
     # Generate the output directly into the package, not to a hidden cache dir

@@ -10,8 +10,9 @@ class User implements IOdooModel {
   final int? id; //false
   final String? login; //false
   final String? namke; //false
+  final dynamic? withouttype; //false
 
-  User({this.id, this.login, this.namke});
+  User({this.id, this.login, this.namke, this.withouttype});
   factory User.fromJson(Map<String, dynamic> json) => _$UserFromJson(json);
   Map<String, dynamic> toJson() => _$UserToJson(this);
 
@@ -68,11 +69,13 @@ User _$UserFromJson(Map<String, dynamic> json) {
   return User(
       id: json['id'] as int,
       login: json['login'] as String,
-      namke: json['namke'] as String);
+      namke: json['namke'] as String,
+      withouttype: json['withouttype'] as dynamic);
 }
 
 Map<String, dynamic> _$UserToJson(User instance) => <String, dynamic>{
       'id': instance.id,
       'login': instance.login,
-      'namke': instance.namke
+      'namke': instance.namke,
+      'withouttype': instance.withouttype
     };

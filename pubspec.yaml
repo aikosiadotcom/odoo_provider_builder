@@ -13,8 +13,8 @@ dependencies:
     sdk: flutter
   analyzer: ^1.6.0
   build: ^2.1.0
-  odoo_provider: 
-    path: '../odoo_provider'
+  yao_core_builder:
+    path: '../yao_core_builder'
   source_gen: ^1.0.2
 
 dev_dependencies:

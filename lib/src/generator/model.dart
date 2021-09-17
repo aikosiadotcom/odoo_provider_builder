@@ -1,5 +1,5 @@
 import 'package:build/build.dart';
-import 'package:odoo_provider/odoo_provider.dart';
+import 'package:yao_core_builder/yao_core_builder.dart';
 import 'package:source_gen/source_gen.dart';
 import 'package:analyzer/dart/element/element.dart';
 
@@ -16,9 +16,9 @@ List<DbColumn> _getDefinitions(List<dynamic> columns) {
       type = bool;
     } else if (_type.isDartCoreDouble == true) {
       type = double;
+    } else {
+      type = dynamic;
     }
-
-    print(_type.toString());
 
     bool? required = element.getField("required")!.toBoolValue();
 
@@ -76,11 +76,11 @@ class OdooProviderModelGenerator extends GeneratorForAnnotation<OdooModel> {
   @override
   String generateForAnnotatedElement(
       Element element, ConstantReader annotation, BuildStep buildStep) {
+    // print("hello world");
     final className = annotation.read('className').stringValue;
     final tableName = annotation.read('tableName').stringValue;
     final columns = annotation.read('columns').listValue;
     final idFieldName = annotation.read("id").stringValue;
-    print("hello world");
     List<DbColumn> columns2 = _getDefinitions(columns);
     return '''
 class $className implements IOdooModel {
