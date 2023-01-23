@@ -15,7 +15,7 @@ dependencies:
   build: ^2.1.0
   yao_core_builder:
     git:
-      url: git://github.com/aikosiadotcom/yao_core_builder.git
+      url: https://github.com/aikosiadotcom/yao_core_builder.git
       ref: master
   source_gen: ^1.0.2
 
